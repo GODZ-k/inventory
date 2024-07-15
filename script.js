@@ -132,3 +132,23 @@ const sourceData = [
     }
   });
   
+
+
+
+  // filter
+  
+  function updateURL() {
+    const selectElement = document.getElementById('period');
+    const selectedValue = selectElement.value;
+    const newURL = `?usage&purchase=${selectedValue}`;
+    window.location.href = newURL;
+}   
+function setSelectedOption() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const purchaseValue = urlParams.get('purchase');
+
+    if (purchaseValue) {
+        document.getElementById('period').value = purchaseValue;
+    }
+}
+window.onload = setSelectedOption;
