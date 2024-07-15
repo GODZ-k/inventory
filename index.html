@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="inventory-container">
+      <div class="inventory-header">
+        <h1>Inventory</h1>
+      </div>
+      <div class="inventory">
+        <div class="inventory-card">
+          <div class="inventory-image">img</div>
+          <div class="inventory-name">Total sales</div>
+          <div class="inventory-amount">
+            <h1>$44,222</h1>
+          </div>
+          <div class="inventory-graph">
+            <div class="inventory-graph-percentage">
+              <i class="fa-solid fa-arrow-trend-up"></i> 20%
+            </div>
+            <div class="inventory-timestamp">Than Last Month</div>
+          </div>
+        </div>
+        <div class="inventory-card">
+          <div class="inventory-image">img</div>
+          <div class="inventory-name">Total sales</div>
+          <div class="inventory-amount">
+            <h1>$44,222</h1>
+          </div>
+          <div class="inventory-graph">
+            <div class="inventory-graph-percentage">
+              <i class="fa-solid fa-arrow-trend-up"></i> 20%
+            </div>
+            <div class="inventory-timestamp">Than Last Month</div>
+          </div>
+        </div>
+        <div class="inventory-card">
+          <div class="inventory-image">img</div>
+          <div class="inventory-name">Total sales</div>
+          <div class="inventory-amount">
+            <h1>$44,222</h1>
+          </div>
+          <div class="inventory-graph">
+            <div class="inventory-graph-percentage">
+              <i class="fa-solid fa-arrow-trend-up"></i> 20%
+            </div>
+            <div class="inventory-timestamp">Than Last Month</div>
+          </div>
+        </div>
+        <div class="inventory-card">
+          <div class="inventory-image">img</div>
+          <div class="inventory-name">Total sales</div>
+          <div class="inventory-amount">
+            <h1>$44,222</h1>
+          </div>
+          <div class="inventory-graph">
+            <div class="inventory-graph-percentage">
+              <i class="fa-solid fa-arrow-trend-up"></i> 20%
+            </div>
+            <div class="inventory-timestamp">Than Last Month</div>
+          </div>
+        </div>
+      </div>
+      <div class="sales-purchase-rows">
+        <div class="usage-component">
+          <div class="usage-comp-filter">
+            <h2>Usage & Purchase</h2>
+            <div>6 months</div>
+          </div>
+          <div class="usagepurchasegraph">
+            <canvas id="usageandpurchase"></canvas>
+          </div>
+        </div>
+        <div class="stock-overview">
+          <h2>Device</h2>
+          <div>
+            <canvas id="stockoverviewgraph"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="recent-purchase-stock-alert">
+        <div class="recent-purchase">
+          <div class="recent-purchases-header">
+            <h2>Recent Purchase</h2>
+            <a href="#">View all purchases</a>
+          </div>
+          <div class="recent-purchase-table">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Invoice ID</th>
+                  <th>Customer</th>
+                  <th>Sales Date</th>
+                  <th>Paid Amount</th>
+                  <th>Sales Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#1212121</td>
+                  <td>John Doe</td>
+                  <td>01/01/2023</td>
+                  <td>$500</td>
+                  <td><div class="purchase-status">Completed</div></td>
+                </tr>
+                <tr>
+                  <td>#1212122</td>
+                  <td>Jane Smith</td>
+                  <td>02/01/2023</td>
+                  <td>$300</td>
+                  <td><div class="purchase-status">Pending</div></td>
+                </tr>
+                <!-- Add more rows as needed -->
+              </tbody>
+            </table>
+          </div>
+          
+        </div>
+        <div class="stock-alert">
+          <h2 class="stock-alert-heading">Stock Alert</h2>
+          <div class="stock-alert-table">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Quantity</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#1212121</td>
+                  <td>John Doe</td>
+                </tr>
+                <tr>
+                  <td>#1212121</td>
+                  <td>John Doe</td>
+                </tr>
+                <tr>
+                  <td>#1212121</td>
+                  <td>John Doe</td>
+                </tr>
+                <tr>
+                  <td>#1212121</td>
+                  <td>John Doe</td>
+                </tr>
+                <tr>
+                  <td>#1212121</td>
+                  <td>John Doe</td>
+                </tr>
+                <tr>
+                  <td>#1212121</td>
+                  <td>John Doe</td>
+                </tr>
+                <tr>
+                  <td>#1212121</td>
+                  <td>John Doe</td>
+                </tr>
+                <tr>
+                  <td>#1212121</td>
+                  <td>John Doe</td>
+                </tr>
+                <tr>
+                  <td>#1212121</td>
+                  <td>John Doe</td>
+                </tr>
+                <tr>
+                  <td>#1212121</td>
+                  <td>John Doe</td>
+                </tr>
+                <tr>
+                  <td>#1212121</td>
+                  <td>John Doe</td>
+                </tr>
+                <tr>
+                  <td>#1212121</td>
+                  <td>John Doe</td>
+                </tr>
+                <!-- Add more rows as needed -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+        
+       </div>
+        <div class="payment-overview">
+          <canvas id="payment-overview-graph"></canvas>
+  
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/b770edd56a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.inventory-container {
+    background-color: #f7f7fe;
+    padding: 1rem;
+}
+
+.inventory-header {
+    padding: 2rem;
+}
+
+.inventory-header h1 {
+    color: rgb(67, 67, 67);
+}
+
+.inventory {
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.inventory-card {
+    background-color: #f7f7fe;
+    padding: 1rem 2rem 1rem 1rem;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.inventory-image {
+    background-color: aqua;
+    border-radius: 20%;
+    margin-bottom: 1rem;
+    width: fit-content;
+    padding: 0.5rem;
+}
+
+.inventory-name {
+    font-size: 14px;
+    color: rgb(69, 69, 69);
+    margin-bottom: 0.5rem;
+}
+
+.inventory-amount {
+    font-size: 15px;
+    color: rgb(66, 66, 66);
+}
+
+.inventory-graph {
+    display: flex;
+    margin: 0.5rem 0;
+    padding-left: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.inventory-graph-percentage {
+    color: #7eb5d0;
+    font-size: 15px;
+}
+
+.inventory-timestamp {
+    font-size: 14px;
+    color: rgb(56, 56, 56);
+}
+
+.usage-component {
+    background-color: white;
+    width: 60%;
+    padding: 1.5rem;
+    /* height: 60vh; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 30px;
+}
+
+.usage-comp-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.usagepurchasegraph {
+    width: 100%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#usageandpurchase {
+    width: 100%;
+    height: 100%;
+}
+
+.stock-overview {
+    background-color: white;
+    border-radius: 30px;
+    width: 23rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.stock-overview h2 {
+    font-size: 20px;
+}
+
+.sales-purchase-rows {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.recent-purchase{
+background-color: white;
+/* padding: 2rem; */
+width: 100%;
+border-radius: 30px;
+}
+
+.recent-purchases-header{
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.recent-purchases-header a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: black;
+border-radius: 10px;
+    color: white;
+}
+.recent-purchase-stock-alert{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+    justify-content: space-between;
+}
+.stock-alert {
+    background-color: white;
+    border-radius: 20px;
+    width: 30rem;
+    height: 65vh;
+    overflow: hidden;
+    padding: 0 0 4rem 0;
+    max-width: 27rem;
+    margin: 0 auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stock-alert-heading {
+    padding: 2rem;
+    text-align: center;
+    color: #333;
+}
+
+.stock-alert-table {
+    width: 100%;
+    overflow-y: auto;
+    max-height: 50vh;
+}
+
+.stock-alert-table thead, .stock-alert-table tbody {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.stock-alert-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.stock-alert-table thead th {
+    padding: 0.7rem 0;
+    background-color: #f8f8f8;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+    color: rgb(95, 95, 95);
+    font-weight: normal;
+    /* text-align: left; */
+}
+
+.stock-alert-table tbody {  
+    text-align: center;
+}
+
+.stock-alert-table tbody td {
+    padding: 1rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    color: rgb(67, 67, 67);
+    font-size: 15px;
+}
+
+
+
+.recent-purchase-table {
+    margin: 2rem 0;
+    overflow-x: scroll;
+}
+
+.recent-purchase-table table {
+    width: 100%;
+    border-collapse: collapse; /* Ensures borders collapse into a single border */
+}
+
+.recent-purchase-table table thead th {
+    background-color: #f4f4f4;
+    color: #434343;
+    font-weight: normal;
+    padding: 1rem;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f1f1f1;
+}
+.recent-purchase-table tbody tr {
+    text-align: center;
+    color: rgb(68, 68, 68);
+}
+
+.recent-purchase-table tbody td {
+    padding: 1rem;
+    font-size: 14px;
+    border-bottom: 1px solid #f0f0f0; /* Adds a subtle separation between rows */
+}
+
+.purchase-status {
+    background-color: rgba(255, 0, 0, 0.27);
+    color: red;
+    border-radius: 5px;
+    padding: 5px 0;
+    font-size: small;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+
+
+
+.payment-overview{
+    width: 100%;
+    height: 50vh;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+/* Media Queries for Responsive Design */
+
+
+@media (max-width: 768px) {
+    .usage-component {
+        width: 100%;
+    }
+    .stock-overview{
+        width: 100%;
+        gap: 1rem;
+    }
+    .stock-overview div{
+        width: 40%;
+        margin: auto;
+    }
+    .sales-purchase-rows {
+       flex-direction: column;
+    }
+    .recent-purchase-stock-alert {
+        flex-direction: column-reverse;
+
+    }
+    .stock-alert {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .stock-overview div {
+        width: 70%;
+        margin: auto;
+    }
+}
+@media (max-width: 425px) {
+    .stock-overview div {
+        width: 100%;
+        margin: auto;
+    }
+}
