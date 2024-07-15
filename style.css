@@ -306,6 +306,12 @@ border-radius: 10px;
     .payment-overview div{
         width: 80%;
     }
+    .recent-purchases-header {
+        padding: 2rem 1rem;
+    }
+    .payment-overview h2 {
+        padding: 2rem 1rem;
+    }
 }
 @media (max-width: 500px) {
     .stock-overview div {
