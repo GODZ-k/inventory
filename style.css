@@ -17,25 +17,24 @@
 .inventory-header h1 {
     color: rgb(67, 67, 67);
 }
-
 .inventory {
     background-color: white;
     padding: 1rem;
-    display: flex;
-    gap: 2rem;
-    flex-wrap: nowrap;
+    /* display: flex; */
+    display: grid;
     overflow-x: scroll;
+    gap: 2rem;
+    grid-auto-flow: column;
     margin-bottom: 1rem;
     justify-content: space-around;
     align-items: center;
     border-radius: 30px;
 }
-
 .inventory-card {
     background-color: #f7f7fe;
     padding: 1rem 2rem 1rem 1rem;
-    /* width: fit-content; */
-    width: 30rem;
+    width: fit-content;
+    width: 18rem;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
