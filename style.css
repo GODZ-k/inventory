@@ -95,6 +95,17 @@
     align-items: center;
 }
 
+.usage-comp-filter select {
+    padding: 7px;
+    background: #f2f2f2;
+    border: none;
+    color: #343434;
+    border-radius: 4px;
+}
+
+.usage-comp-filter h2{
+    font-size: 22px;
+}
 .usagepurchasegraph {
     width: 100%;
     /* display: flex; */
