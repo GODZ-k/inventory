@@ -168,6 +168,7 @@ border-radius: 10px;
 
 .stock-alert-heading {
     padding: 2rem;
+    font-size: 18px;
     text-align: center;
     color: #333;
 }
@@ -313,13 +314,30 @@ border-radius: 10px;
 }
 @media (max-width: 425px) {
     .stock-overview div {
-        width: 70%;
+        width: 100%;
         margin: auto;
+    }
+    .recent-purchases-header a {
+        font-size: 12px;
+    }
+    .usage-component {
+        padding: 1rem;  
+    }
+    .recent-purchases-header {
+        padding: 1rem;
+    }
+    .payment-overview {
+        padding: 0;
     }
     .payment-overview h2 {
         padding: 1rem;
+        font-size: 18px;
     }
     .payment-overview div{
         width: 100%;
+        padding: 5px;
+    }
+    .recent-purchases-header  h2{
+        font-size: 18px;
     }
 }
