@@ -36,6 +36,7 @@
     width: fit-content;
     width: 18rem;
     display: flex;
+    text-decoration: none;
     flex-direction: column;
     border-radius: 20px;
 }
@@ -80,7 +81,7 @@
 
 .usage-component {
     background-color: white;
-    width: 60%;
+    width: 100%;
     padding: 1.5rem;
     /* height: 60vh; */
     display: flex;
@@ -122,7 +123,8 @@
 .stock-overview {
     background-color: white;
     border-radius: 30px;
-    width: 23rem;
+    width: 30rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -137,7 +139,7 @@
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: space-between;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .recent-purchase{
@@ -149,7 +151,7 @@ border-radius: 30px;
 
 .recent-purchases-header{
     display: flex;
-    padding: 2rem;
+    padding: 1.5rem;
     justify-content: space-between;
     align-items: center;
 }
@@ -286,7 +288,7 @@ border-radius: 10px;
     height: 100%;
 }
 .payment-overview h2{
-    padding: 2rem;
+    padding: 1.5rem;
 }
 /* Media Queries for Responsive Design */
 
